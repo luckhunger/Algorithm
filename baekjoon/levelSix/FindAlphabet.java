@@ -45,7 +45,7 @@ public class FindAlphabet {
 			// -1이 아니라면 이미 등장한 알파벳이므로 넘어간다.
 			if(alpha[word - 'a'] == -1) {
 				alpha[word - 'a'] = i;
-				System.out.println(alpha[word - 'a']);
+//				System.out.println(alpha[word - 'a']);
 			}
 		}
 		
