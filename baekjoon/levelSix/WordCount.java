@@ -1,6 +1,10 @@
 package levelSix;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Scanner;
+import java.util.StringTokenizer;
 
 /*
 문제 : 영어 대소문자와 공백으로 이루어진 문자열이 주어진다. 
@@ -15,26 +19,36 @@ import java.util.Scanner;
 
 public class WordCount {
 
-	public static int Count(String str) {
-		int result = 0;
-		// trim() : 앞뒤 공백을 제거한 문자열의 복사본을 리턴한다.
-		str = str.trim();
-		
-		if(str.isEmpty() == false) {
-			String[] word = str.split(" ");
-			for(int i=0; i<word.length; i++) {
-//				System.out.println(word[i]);
-				result++;
-			}
-		}
-		return result;
-	}
+//	public static int Count(String str) {
+//		int result = 0;
+//		// trim() : 앞뒤 공백을 제거한 문자열의 복사본을 리턴한다.
+//		str = str.trim();
+//		
+//		// isEmpty() : 문자열의 길이가 0인 경우에, true를 리턴한다. 
+//		if(str.isEmpty() == false) {
+//			String[] word = str.split(" ");
+//			for(int i=0; i<word.length; i++) {
+////				System.out.println(word[i]);
+//				result++;
+//			}
+//		}
+//		return result;
+//	}
 	
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		// 공백을 포함해서 한 줄로 입력받기 위해 nextLine() 사용
-		String str = sc.nextLine();
+	public static void main(String[] args) throws IOException{
+//		Scanner sc = new Scanner(System.in);
+//		// 공백을 포함해서 한 줄로 입력받기 위해 nextLine() 사용
+//		String str = sc.nextLine();
+//		
+//		System.out.println(Count(str));
 		
-		System.out.println(Count(str));
+		// StringTokenizer 사용
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		// StringTokenizer : 하나의 문자열을 여러 개의 토큰으로 분리하는 클래스
+		StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+		// StringTokenizer 클래스의 안에서 제공하는 기본 메서드
+		// nextToken 메서드를 호출 할 수 있는 횟수를 계산한다.
+		// StringTokenizer의 남아있는 토큰 갯수를 반환한다.
+		System.out.println(st.countTokens());
 	}
 }
