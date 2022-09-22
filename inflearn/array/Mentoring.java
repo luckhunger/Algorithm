@@ -33,7 +33,7 @@ public class Mentoring {
 					// for(s) : 등수만큼 돈다.
 					for(int s=0; s<N; s++) {
 						if(arr[k][s] == i) pi = s;
-						if(arr[k][s] == k) pj = s;
+						if(arr[k][s] == j) pj = s;
 					}
 					// pi보다 pj가 크면 즉, 멘토가 멘티보다 등수가 앞서면(=적으면) 멘토가 될 수 있으므로 cnt++
 					if(pi < pj) cnt++;
