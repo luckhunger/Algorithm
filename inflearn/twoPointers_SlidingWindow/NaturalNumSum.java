@@ -16,28 +16,44 @@ import java.util.Scanner;
 public class NaturalNumSum {
 
 	public int count(int N) {
+		// 포인터 안쓰고 수학적으로 푸는 방법
 		int result = 0;
-		int sum = 0;
-		int lt = 0;
-		int M = N/2+1;
-		int[] arr = new int[M];
+		// cnt : 연속된 자연수의 개수
+		int cnt = 1;
 		
-		for(int i=0; i<M; i++) {
-			// i는 인덱스 값으로 0~14까지 생성되는데, 우리에게 필요한 값은 1~15이므로 1씩 더해서 배열에 넣어준다.
-			arr[i] = i+1;
-		}	
+		N--;
 		
-		for(int rt=0; rt<M; rt++) {
-			// sum : arr[lt] 부터 arr[rt]까지의 합
-			sum += arr[rt];
-			if(sum == N) result++;
-			
-			while(sum >= N) {
-				// sum에서 arr[lt] 값을 뺀 후에 lt++
-				sum -= arr[lt++];
-				if(sum == N) result++;
-			}
+		// N = 14 / cnt = 2 이면 >> N = 14 - 2 >> 12
+		// 12 % 2 = 몫이 6, 나머지가 0이니까 result++
+		// 연속된 2개의 수를 보겠다 > 즉, 6과 6으로 2개로 나누어진다.
+		while(N>0) {
+			cnt++;
+			N = N - cnt;
+			if(N%cnt==0) result++; 
 		}
+		
+//		int result = 0;
+//		int sum = 0;
+//		int lt = 0;
+//		int M = N/2+1;
+//		int[] arr = new int[M];
+//		
+//		for(int i=0; i<M; i++) {
+//			// i는 인덱스 값으로 0~14까지 생성되는데, 우리에게 필요한 값은 1~15이므로 1씩 더해서 배열에 넣어준다.
+//			arr[i] = i+1;
+//		}	
+//		
+//		for(int rt=0; rt<M; rt++) {
+//			// sum : arr[lt] 부터 arr[rt]까지의 합
+//			sum += arr[rt];
+//			if(sum == N) result++;
+//			
+//			while(sum >= N) {
+//				// sum에서 arr[lt] 값을 뺀 후에 lt++
+//				sum -= arr[lt++];
+//				if(sum == N) result++;
+//			}
+//		}
 		return result;
 	}
 	
