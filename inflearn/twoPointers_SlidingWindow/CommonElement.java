@@ -20,7 +20,7 @@ public class CommonElement {
 		ArrayList<Integer> result = new ArrayList<>();
 		
 		// Arrays : Arrays 클래스는 배열의 복사, 항목 정렬, 검색과 같은 배열을 조작 기능을 가지고 있다.
-		// Arrays.sort() : 베열을 자동으로 오름차순으로 정렬해준다.
+		// Arrays.sort() : 배열을 자동으로 오름차순으로 정렬해준다.
 		Arrays.sort(A);
 		Arrays.sort(B);
 		
