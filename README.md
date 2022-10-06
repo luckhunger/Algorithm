@@ -9,6 +9,10 @@
    - 백준 : 단계별로 풀어보기 > 4단계 > 1차원 배열(10818 / 2562 / 3052 / 1546 / 8958 / 4344)
    
 3. Two pointers, Sliding window
-   - 인프런 : 자바(Java) 알고리즘 문제풀이 > 섹션 2. Two pointers, Sliding window[효율성 : O(n^2)-->O(n)] 1~6번
+   - 인프런 : 자바(Java) 알고리즘 문제풀이 > 섹션 3. Two pointers, Sliding window[효율성 : O(n^2)-->O(n)] 1~6번
    - 백준 : 단계별로 풀어보기 > 28단계 > 투 포인터(3273 / 2470 / 1806 / 1644 / 1450)
+   
+4. HashMap, TreeSet (해쉬, 정렬지원 Set)
+   - 인프런 : 자바(Java) 알고리즘 문제풀이 > 섹션 4. HashMap, TreeSet (해쉬, 정렬지원 Set) 1~5번
+   
    
