@@ -1,6 +1,6 @@
 # Algorithm
 
-[공부 및 정리용 블로그 바로가기](https://silverji.tistory.com/)
+[공부 및 정리용 블로그 바로가기(silverJi)](https://silverji.tistory.com/)
 
 1. String(문자열)
    - 인프런 : 자바(Java) 알고리즘 문제풀이 > 섹션 1. String(문자열) 1~12번
