@@ -24,7 +24,7 @@
    
 6. Sorting and Searching(정렬, 이분검색과 결정알고리즘)
    - 인프런 : 자바(Java) 알고리즘 문제풀이 > 섹션 6. Sorting and Searching(정렬, 이분검색과 결정알고리즘) 1~10번
-   - 백준 : 단계별로 풀어보기 > 10단계 > 정렬(2750 / 2587 / 25305 / 2751 / 2108)  
+   - 백준 : 단계별로 풀어보기 > 10단계 > 정렬(2750 / 2587 / 25305 / 2751)  
    
 7. Recursive, Tree, Graph(DFS, BFS 기초)
    - 인프런 : 자바(Java) 알고리즘 문제풀이 > 섹션 7. Recursive, Tree, Graph(DFS, BFS 기초) 1~14번
