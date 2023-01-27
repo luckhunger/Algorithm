@@ -23,14 +23,11 @@ public class BreakevenPoint {
 		int A = Integer.parseInt(st.nextToken());
 		int B = Integer.parseInt(st.nextToken());
 		int C = Integer.parseInt(st.nextToken());
-		int N = (A / (C-B)) + 1;
 		
 		if(C <= B) {
 			System.out.println("-1");
 		}else {
-			System.out.println(N);
+			System.out.println((A / (C-B)) + 1);
 		}
-		
 	}
-
 }
