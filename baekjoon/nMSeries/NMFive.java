@@ -46,25 +46,25 @@ public class NMFive {
 	public static void main(String[] args) throws IOException {
 		NMFive f = new NMFive();
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-			StringTokenizer st = new StringTokenizer(br.readLine(), " ");
-			N = Integer.parseInt(st.nextToken());
-			M = Integer.parseInt(st.nextToken());
-			arr = new int[N];
-			// 출력은 M개만 해야한다.
-			graph = new int[M];
-			ch = new int[N];
+		StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+		N = Integer.parseInt(st.nextToken());
+		M = Integer.parseInt(st.nextToken());
+		arr = new int[N];
+		// 출력은 M개만 해야한다.
+		graph = new int[M];
+		ch = new int[N];
+	
+		// 토큰을 사용해서 값을 넣기 전에 반드시 아래 코드 필요
+		// 아래 코드 없이 실행하면 NoSuchElementException 에러 발생
+		// 입력받은 값을 구분자로 나누기 위해 사용하는데 입력받은 값이 없거나 값을 나눠주지 않는다면 에러가 발생한다.
+		st = new StringTokenizer(br.readLine());
+		for(int i=0; i<N; i++) {
+			arr[i] = Integer.parseInt(st.nextToken());
+		}
 		
-			// 토큰을 사용해서 값을 넣기 전에 반드시 아래 코드 필요
-			// 아래 코드 없이 실행하면 NoSuchElementException 에러 발생
-			// 입력받은 값을 구분자로 나누기 위해 사용하는데 입력받은 값이 없거나 값을 나눠주지 않는다면 에러가 발생한다.
-			st = new StringTokenizer(br.readLine());
-			for(int i=0; i<N; i++) {
-				arr[i] = Integer.parseInt(st.nextToken());
-			}
-			
-			Arrays.sort(arr);
-			f.DFS(0);
-			System.out.println(sb);
+		Arrays.sort(arr);
+		f.DFS(0);
+		System.out.println(sb);
 	}
 
 }
