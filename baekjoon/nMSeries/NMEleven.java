@@ -58,5 +58,4 @@ public class NMEleven {
 		eleven.DFS(0);
 		System.out.println(sb);
 	}
-
 }
