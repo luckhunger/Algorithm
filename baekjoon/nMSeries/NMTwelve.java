@@ -21,7 +21,7 @@ import java.util.StringTokenizer;
 
 public class NMTwelve {
 	static int N, M;
-	static int[] ch, arr, graph;
+	static int[] arr, graph;
 	static StringBuilder sb = new StringBuilder();
 	
 	public void DFS(int depth, int value) {
@@ -51,7 +51,6 @@ public class NMTwelve {
 		N = Integer.parseInt(st.nextToken());
 		M = Integer.parseInt(st.nextToken());
 		arr = new int[N];
-		ch = new int[N];
 		graph = new int[M];
 		
 		st = new StringTokenizer(br.readLine());
