@@ -1,6 +1,7 @@
 package levelOne;
 
 import java.util.Arrays;
+import java.util.stream.Collectors;
 
 /*
 문제 : 당신은 폰켓몬을 잡기 위한 오랜 여행 끝에, 홍 박사님의 연구실에 도착했습니다. 
@@ -30,20 +31,30 @@ import java.util.Arrays;
 public class PonKemon {
 	
 	public int Count(int[] nums) {
+		
+//		방법 2
+		// Arrays.stream : Arrays 클래스에서 제공하는 stream() 메서드를 사용하여 배열을 스트림으로 변환할 수 있다.
+		return Arrays.stream(nums)
+				// boxed : 원시 타입에 대한 스트림 지원을 클래스 타입으로 전환하여 실행가능하게 하는 기능을 수행하기 위해 존재한다.
+				// int 자체로는 Collection에 담지 못하기 Integer 클래스로 변환해서 담는다.
+                .boxed()	
+                // collections : list, set 의 상위 인터페이스
+                // collectingAndThen : 변경할 수 없는 컬렉션을 만들기 위해 사용
+                // toSet : 집합 생성
+                .collect(Collectors.collectingAndThen(Collectors.toSet(),
+                        phonekemons -> Integer.min(phonekemons.size(), nums.length / 2)));
 
 //		방법 1
-		int result = 1;
-		int value = nums[0];
-		
-		for(int i=1; i<nums.length; i++) {
-			if(value != nums[i]) {
-				result++;
-				value = nums[i];
-				
-			}
-			
-		}
-		return result < nums.length / 2 ? result : nums.length / 2;
+//		int result = 1;
+//		int value = nums[0];
+//		
+//		for(int i=1; i<nums.length; i++) {
+//			if(value != nums[i]) {
+//				result++;
+//				value = nums[i];
+//			}
+//		}
+//		return result < nums.length / 2 ? result : nums.length / 2;
 	}
 	
 	public static void main(String[] args) {
@@ -54,9 +65,6 @@ public class PonKemon {
 //		int[] nums = new int[] {3, 3, 3, 2, 2, 2};
 		
 		Arrays.sort(nums);
-		
 		System.out.println(mon.Count(nums));
-		
 	}
-
 }
