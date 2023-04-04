@@ -40,11 +40,11 @@ public class ChangeWord {
 	}
 	
 	// 다른 스펠링이 몇 개인지 개수 찾기
-	public static int compare(String begin, String target) {
+	public static int compare(String start, String end) {
 		int n = 0;
 		
-		for(int i=0; i<target.length(); i++) {
-			if(begin.charAt(i) != target.charAt(i)) {
+		for(int i=0; i<end.length(); i++) {
+			if(start.charAt(i) != end.charAt(i)) {
 				n++;
 			}
 		}
