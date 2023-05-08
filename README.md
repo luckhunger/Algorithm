@@ -40,10 +40,10 @@
    - 인프런 : 자바(Java) 알고리즘 문제풀이 > 섹션 9. Greedy Algorithm 1~7번
    
 10. dynamic programming(동적계획법)
-   - 인프런 : 자바(Java) 알고리즘 문제풀이 > 섹션 10. dynamic programming(동적계획법) 1~6번
+      - 인프런 : 자바(Java) 알고리즘 문제풀이 > 섹션 10. dynamic programming(동적계획법) 1~6번
    
 11. 중간점검용
-   - [알고리즘 문제풀이(PS) 시작하기](https://plzrun.tistory.com/entry/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4PS-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0)
+      - [알고리즘 문제풀이(PS) 시작하기](https://plzrun.tistory.com/entry/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4PS-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0)
 
 8. 복습
    - 프로그래머스 LV.1
