@@ -1,4 +1,4 @@
-# [level 1] 가장 비싼 상품 구하기 - 131697 
+# [131697] 가장 비싼 상품 구하기
 
 [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/131697) 
 
